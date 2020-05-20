@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/metal-genius/static/js/main.98d24c98.chunk.js",
+    "main.js.map": "/metal-genius/static/js/main.98d24c98.chunk.js.map",
+    "runtime-main.js": "/metal-genius/static/js/runtime-main.76f35add.js",
+    "runtime-main.js.map": "/metal-genius/static/js/runtime-main.76f35add.js.map",
+    "static/css/2.61a570a4.chunk.css": "/metal-genius/static/css/2.61a570a4.chunk.css",
+    "static/js/2.8bdced05.chunk.js": "/metal-genius/static/js/2.8bdced05.chunk.js",
+    "static/js/2.8bdced05.chunk.js.map": "/metal-genius/static/js/2.8bdced05.chunk.js.map",
+    "index.html": "/metal-genius/index.html",
+    "precache-manifest.d28dc664dfcdb7b9a96a3dd5469e1b81.js": "/metal-genius/precache-manifest.d28dc664dfcdb7b9a96a3dd5469e1b81.js",
+    "service-worker.js": "/metal-genius/service-worker.js",
+    "static/css/2.61a570a4.chunk.css.map": "/metal-genius/static/css/2.61a570a4.chunk.css.map",
+    "static/js/2.8bdced05.chunk.js.LICENSE.txt": "/metal-genius/static/js/2.8bdced05.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76f35add.js",
+    "static/css/2.61a570a4.chunk.css",
+    "static/js/2.8bdced05.chunk.js",
+    "static/js/main.98d24c98.chunk.js"
+  ]
+}
