@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { useMediaQuery } from '@material-ui/core';
 import { fetchArtists, fetchAggregateData } from '../actions';
 import { FETCH_SAMPLE_ARTISTS, FETCH_AGGREGATE_DATA } from '../actions/types';
 import { createLoadingSelector } from '../selectors';
@@ -12,9 +13,11 @@ import LoadingSpinner from './LoadingSpinner';
 const useStyles = makeStyles(theme => ({
     root: {
         height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-evenly'
+        [theme.breakpoints.up('xs')]: {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-evenly'
+        }
     }
 }));
 
@@ -28,6 +31,8 @@ const App = ({
 }) => {
 
     const classes = useStyles();
+    const theme = useTheme();
+    const useMobileLayout = useMediaQuery(theme.breakpoints.down('xs'));
 
     useEffect(() => {
         fetchArtists();
@@ -41,7 +46,9 @@ const App = ({
             ) : (
                 <>
                     <GenresList />
-                    <ArtistsLayout />
+                    <ArtistsLayout
+                        mobileLayout={useMobileLayout}
+                    />
                     <ArtistDialog />
                 </>
             )}

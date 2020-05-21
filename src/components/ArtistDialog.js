@@ -17,7 +17,7 @@ import { createLoadingSelector } from '../selectors';
 
 const useStyles = makeStyles({
     appBar: {
-        position: 'relative'
+        position: 'fixed'
     },
     content: {
         height: '100%'
@@ -76,6 +76,7 @@ const ArtistDialog = ({
                     </IconButton>
                 </Toolbar>
             </AppBar>
+            <Toolbar />
             
             {
                 Boolean(id) &&

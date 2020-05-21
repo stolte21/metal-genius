@@ -6,13 +6,20 @@ import { Typography } from '@material-ui/core';
 import { selectGenre } from '../actions';
 
 const useStyles = makeStyles(theme =>({
+    container: {
+        [theme.breakpoints.down('xs')]: {
+            height: 150
+        }
+    },
     list: {
         display: 'flex',
         justifyContent: 'space-evenly',
         margin: 0,
         padding: 0,
         [theme.breakpoints.down('xs')]: {
+            height: '100%',
             flexDirection: 'column',
+            justifyContent: 'center',
             alignItems: 'center'
         }
     },
@@ -69,7 +76,7 @@ const GenresList = ({
     };
 
     return (
-        <div>
+        <div className={classes.container}>
             <ul className={classes.list}>
                 {renderList()}
             </ul>

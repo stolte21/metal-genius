@@ -1,15 +1,25 @@
 import React, { useEffect } from 'react';
+import clsx from 'clsx';
 import { connect } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container } from '@material-ui/core';
 import ArtistBubble from './ArtistBubble';
+import ArtistList from './ArtistList';
 import { fetchGeniusArtists } from '../actions';
 import { getArtistsOfGenre } from '../selectors';
 
 const useStyles = makeStyles(theme => ({
     root: {
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        [theme.breakpoints.down('xs')]: {
+            // the genre menu is 150px in height
+            height: 'calc(100% - 150px)'
+        }
+    },
+    mobileContainer: {
+        height: '100%',
+        paddingBottom: 16
     },
     row: {
         display: 'flex',
@@ -60,6 +70,7 @@ const useStyles = makeStyles(theme => ({
  */
 const ArtistsLayout = ({
     // props
+    mobileLayout = false,
     artists,
     genre,
 
@@ -73,7 +84,7 @@ const ArtistsLayout = ({
         fetchGeniusArtists(artists)
     }, [genre, fetchGeniusArtists, artists])
 
-    const renderRows = () => {
+    const renderBubbleLayout = () => {
         const rows = [];
 
         // sanity check, there should be exactly 21 artists
@@ -103,8 +114,17 @@ const ArtistsLayout = ({
 
     return (
         <div className={classes.root}>
-            <Container maxWidth="lg">
-                {renderRows()}
+            <Container
+                maxWidth="lg"
+                className={clsx({
+                    [classes.mobileContainer]: mobileLayout
+                })}
+            >
+                {mobileLayout ? (
+                    <ArtistList artists={artists} />
+                ) : (
+                    renderBubbleLayout()
+                )}
             </Container>
         </div>
     );
