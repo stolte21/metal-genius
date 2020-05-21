@@ -45,9 +45,12 @@ const ArtistDialog = ({
 
     useEffect(() => {
         if (id) {
-            fetchArtistAnalysis(id);
+            // otherwise we've fetched the lyrics already
+            if (!stats) {
+                fetchArtistAnalysis(id);
+            }
         }
-    }, [id, fetchArtistAnalysis]);
+    }, [id, stats, fetchArtistAnalysis]);
 
     const handleClose = () => {
         selectArtist('');
