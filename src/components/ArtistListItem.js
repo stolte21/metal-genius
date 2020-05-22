@@ -12,6 +12,7 @@ import { selectArtist } from '../actions';
 const ArtistListItem = ({
     // props
     id,
+    rowStyle,
     artists,
 
     // actions
@@ -22,7 +23,7 @@ const ArtistListItem = ({
 
     if (!geniusData) {
         return (
-            <ListItem>
+            <ListItem style={rowStyle}>
                 <ListItemAvatar>
                     <Skeleton
                         variant="circle"
@@ -47,13 +48,15 @@ const ArtistListItem = ({
     } = geniusData;
 
     return (
-        <ListItem 
+        <ListItem
+            style={rowStyle}
             button
             onClick={handleClick}
         >
             <ListItemAvatar>
                 <Avatar
                     src={image_url}
+                    alt={name}
                 />
             </ListItemAvatar>
             <ListItemText
