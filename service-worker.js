@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/metal-genius/precache-manifest.e31597c7b76d799111f955a620c72ca8.js"
+  "/metal-genius/precache-manifest.6bbc3b2968ec0ae1ba1658efbf4ce39d.js"
 );
 
 self.addEventListener('message', (event) => {

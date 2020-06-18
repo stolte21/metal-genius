@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "43c64344df0f305e5721ee3111697475",
+    "revision": "852677c5c315cd76c688683a353599c4",
     "url": "/metal-genius/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/metal-genius/static/js/2.be1d059b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4703ad4ffd14a25953c4",
-    "url": "/metal-genius/static/js/main.ca21562b.chunk.js"
+    "revision": "2e71c92f3f82f0924592",
+    "url": "/metal-genius/static/js/main.f40386a7.chunk.js"
   },
   {
     "revision": "a2d42a10322b9aea9d85",

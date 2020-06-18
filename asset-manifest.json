@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/metal-genius/static/js/main.ca21562b.chunk.js",
-    "main.js.map": "/metal-genius/static/js/main.ca21562b.chunk.js.map",
+    "main.js": "/metal-genius/static/js/main.f40386a7.chunk.js",
+    "main.js.map": "/metal-genius/static/js/main.f40386a7.chunk.js.map",
     "runtime-main.js": "/metal-genius/static/js/runtime-main.76f35add.js",
     "runtime-main.js.map": "/metal-genius/static/js/runtime-main.76f35add.js.map",
     "static/css/2.61a570a4.chunk.css": "/metal-genius/static/css/2.61a570a4.chunk.css",
     "static/js/2.be1d059b.chunk.js": "/metal-genius/static/js/2.be1d059b.chunk.js",
     "static/js/2.be1d059b.chunk.js.map": "/metal-genius/static/js/2.be1d059b.chunk.js.map",
     "index.html": "/metal-genius/index.html",
-    "precache-manifest.e31597c7b76d799111f955a620c72ca8.js": "/metal-genius/precache-manifest.e31597c7b76d799111f955a620c72ca8.js",
+    "precache-manifest.6bbc3b2968ec0ae1ba1658efbf4ce39d.js": "/metal-genius/precache-manifest.6bbc3b2968ec0ae1ba1658efbf4ce39d.js",
     "service-worker.js": "/metal-genius/service-worker.js",
     "static/css/2.61a570a4.chunk.css.map": "/metal-genius/static/css/2.61a570a4.chunk.css.map",
     "static/js/2.be1d059b.chunk.js.LICENSE.txt": "/metal-genius/static/js/2.be1d059b.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.76f35add.js",
     "static/css/2.61a570a4.chunk.css",
     "static/js/2.be1d059b.chunk.js",
-    "static/js/main.ca21562b.chunk.js"
+    "static/js/main.f40386a7.chunk.js"
   ]
 }
