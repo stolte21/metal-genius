@@ -14,6 +14,7 @@ const useStyles = makeStyles(theme => ({
     },
     typography: {
         display: 'flex',
+        textAlign: 'center',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
